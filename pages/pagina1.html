@@ -14,50 +14,75 @@
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
-    <main>
-      <div class="pagina" id="inicio">
-        <!-- CABEÇALHO -->
-        <header>
-          <img src="../Assets/pag2/senac 2.png" alt="" />
-          <section>
-            <ol>
-              <li><a href="#inicio">Usuário</a></li>
-              <li>Perfil</li>
-              <li><a href="#evento">Evento</a></li>
-              <li>Dashboard Adm</li>
-            </ol>
-          </section>
-        </header>
-        <hr />
+    <div class="pagina" id="inicio">
+      <!-- CABEÇALHO -->
+      <header>
+        <img src="../Assets/pag2/senac 2.png" alt="" />
+        <section>
+          <ol>
+            <li><a href="#inicio">Usuário</a></li>
+            <li>Perfil</li>
+            <li><a href="#evento">Evento</a></li>
+            <li>Dashboard Adm</li>
+          </ol>
+        </section>
+      </header>
 
-        <!-- CONTEUDO -->
+      <!-- CONTEUDO -->
 
-        <div class="conteudo">
-          <img src="../Assets/pag2/Unsplash Image.png" alt="" />
-          <div class="coteudoTexto">
-            <h1>Exemplo Show</h1>
-            <div class="informacoes">
+      <div class="conteudo">
+        <img
+          src="../Assets/pag2/Unsplash Image.png"
+          class="imagemGrande"
+          alt=""
+        />
+        <div class="coteudoTexto">
+          <h1>Exemplo Show</h1>
+          <div class="informacoes">
+            <div class="informacao">
               <img src="../Assets/pag2/CalendarWeek.svg" alt="" />
               <p>31/02/2025 ás 00h</p>
               <img src="../Assets/pag2/CashStack.svg" alt="" />
               <p>Gratuito</p>
             </div>
-            <div class="informacoes">
+            <div class="informacao">
               <img src="../Assets/pag2/Icon-Controle.svg" alt="" />
-              <p>Senac Music Hall</p>
+              <p>Senac Music Hall&nbsp;&nbsp;&nbsp;</p>
               <img src="../Assets/pag2/Icon-pessoa.svg" alt="" />
               <p>Capacidade: 5770 pessoas</p>
             </div>
-            <h2>Descrição</h2>
-            <p>
-              Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie,<br> dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem<br> sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit.
-            </p>
+          </div>
+
+          <h2>Descrição</h2>
+          <p class="descricao">
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+            turpis molestie,<br />
+            dictum est a, mattis tellus. Sed dignissim, metus nec fringilla
+            accumsan, risus sem<br />
+            sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget
+            condimentum velit.
+          </p>
+
+          <hr class="linhadescrição" />
+
+          <!-- INPUT EVENTO,INGRESSO E PREÇO TOTAL  -->
+
+          <div class="inputs">
+            <label for="evento">Evento</label>
+            <select name="evento" id="evento">
+              <option value="">Escolha o Evento</option>
+              <option value="exemplo1">Exemplo 1</option>
+              <option value="exemplo2">Exemplo 2</option>
+            </select>
+            <label for="ingresso">Ingresso</label>
+            <input type="text" id="ingresso" name="ingresso" value="" />
+            <p>Preço total: R$ 00,00</p>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <div class="divLogoFinal">
+      <footer>© Senac</footer>
+    </div>
   </body>
 </html>
