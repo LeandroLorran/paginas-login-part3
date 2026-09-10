@@ -49,15 +49,79 @@ header {
 
 .conteudo {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  width: 100vh;
 
-  justify-content: space-between;
-  width: 70%;
+  .divlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+      font-size: 34px;
+      font-weight: 400;
+      width: 400px;
+    }
+
+    .rosa {
+      font-size: 48px;
+      color: #f31366;
+    }
+  }
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+}
+.imagemGrande {
+  width: 1200px;
+}
+
+.descricao {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.divLogoFinal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 0px 50px 50px;
+  height: 25%;
+  background-color: #a2ca02;
+  p {
+    font-size: 24px;
+    color: #1331a1;
+    font-weight: 400;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+   
+  }
+
+  .div1,
+  .div2 {
+    padding-right: 450px;
+  }
+}
+
+.secao2{
+  height: 100vh;
+  display: flex;
+ margin-left: 480px;
+
+}
+.Conteudosecao2 {
 
   .coteudoTexto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     padding: 0px 0px 0px 50px;
     width: 80%;
@@ -66,7 +130,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
+      gap: 50px ;
       width: 100%;
       img {
         width: 52px;
@@ -76,7 +140,6 @@ header {
       p {
         font-size: 24px;
         font-weight: 400;
-        padding-right: 100px;
       }
     }
 
@@ -90,6 +153,10 @@ header {
     }
     div {
       display: flex;
+    }
+
+    .logo{
+      margin-left: 100px;
     }
   }
 
@@ -150,29 +217,7 @@ header {
   }
 }
 
-.informacao {
+.descricao{
   display: flex;
-  align-items: center;
-}
-.imagemGrande {
-  width: 500px;
-}
-
-.descricao {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.divLogoFinal {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a2ca02;
-  p{
-    font-size: 128px;
-    color: white;
-    font-weight: 400;
-  }
-  
+  flex-direction: column;
 }

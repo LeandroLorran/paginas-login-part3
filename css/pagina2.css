@@ -50,10 +50,8 @@ header {
 .conteudo {
   display: flex;
   align-items: flex-start;
-
   justify-content: space-between;
-  width: 70%;
-
+  width: 95%;
   .coteudoTexto {
     display: flex;
     flex-direction: column;
@@ -94,7 +92,7 @@ header {
   }
 
   .linhadescrição {
-    width: 100%;
+    width: 740px;
     border: none;
     border-top: 2px solid rgba(244, 69, 40, 1);
   }
@@ -148,6 +146,23 @@ header {
       font-weight: 400;
     }
   }
+
+  .divlinks{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+    margin-right: 30px;
+    h2{
+      font-size: 34px;
+      font-weight: 400;
+    }
+
+    .rosa{
+      font-size: 48px;
+      color: #F31366;
+    }
+  }
 }
 
 .informacao {
@@ -155,7 +170,9 @@ header {
   align-items: center;
 }
 .imagemGrande {
-  width: 500px;
+  padding: 0px 50px;
+  width: 35%;
+  height: 700px;
 }
 
 .descricao {
@@ -167,12 +184,25 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 50px 0px 50px 50px;
   background-color: #a2ca02;
-  p{
-    font-size: 128px;
-    color: white;
+  p {
+    font-size: 24px;
+    color: #1331A1;
     font-weight: 400;
   }
-  
+
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .div1,
+  .div2{
+    padding-right: 450px;
+  }
 }
+
+

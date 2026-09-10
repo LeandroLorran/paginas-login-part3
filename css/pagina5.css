@@ -20,6 +20,14 @@ body {
   align-items: center;
 }
 
+.secao2 {
+  width: 100%;
+  min-height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 header {
   padding: 20px 0px 20px 0px;
   height: 15%;
@@ -52,57 +60,108 @@ header {
   align-items: flex-start;
 
   justify-content: space-between;
-  width: 70%;
+  width: 95%;
+}
 
-  .coteudoTexto {
+.coteudoTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 0px 0px 50px;
+  width: 80%;
+
+  .informacoes {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 0px 0px 0px 50px;
-    width: 80%;
-
-    .informacoes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 30px;
-      width: 100%;
-      img {
-        width: 52px;
-        margin-right: 15px;
-      }
-
-      p {
-        font-size: 24px;
-        font-weight: 400;
-        padding-right: 100px;
-      }
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    img {
+      width: 52px;
+      margin-right: 15px;
     }
 
-    h1 {
-      font-size: 48px;
+    p {
+      font-size: 24px;
       font-weight: 400;
-    }
-    h2 {
-      font-size: 34px;
-      font-weight: 400;
-    }
-    div {
-      display: flex;
+      padding-right: 100px;
     }
   }
 
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 34px;
+    font-weight: 400;
+  }
+  div {
+    display: flex;
+  }
+}
+
+.imagemGrande {
+  width: 500px;
+}
+
+.descricao {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.divLogoFinal {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2ca02;
+  p {
+    font-size: 128px;
+    color: white;
+    font-weight: 400;
+  }
+}
+
+.divlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h2 {
+    font-size: 34px;
+    font-weight: 400;
+    width: 400px;
+  }
+
+  .rosa {
+    font-size: 48px;
+    color: #f31366;
+  }
+}
+
+.imagemEtexto {
+  display: flex;
+  align-items: flex-end;
+}
+
+.secao2 {
+  padding: 100px 0px 0px 0px;
+
   .linhadescrição {
-    width: 100%;
+    width: 50%;
     border: none;
     border-top: 2px solid rgba(244, 69, 40, 1);
+    margin: 50px 0px 20px 0px;
   }
 
   .inputs {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+
     label {
       font-size: 24px;
       font-weight: 400;
@@ -110,7 +169,7 @@ header {
     }
 
     select {
-      width: 80%;
+      width: 100%;
       height: 44px;
       font-size: 24px;
       font-weight: 400;
@@ -124,7 +183,7 @@ header {
     }
 
     input {
-      width: 80%;
+      width: 100%;
       height: 44px;
       font-size: 24px;
       font-weight: 400;
@@ -150,29 +209,56 @@ header {
   }
 }
 
-.informacao {
-  display: flex;
-  align-items: center;
-}
-.imagemGrande {
-  width: 500px;
+.imgd{
+  margin-left: 100px;
 }
 
-.descricao {
-  font-size: 24px;
-  font-weight: 400;
+.informacoes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .informacao {
+    display: flex;
+    align-items: center;
+    
+    img {
+      width: 52px;
+    
+    }
+    p{
+      padding-left: 20px;
+      font-size: 24px;
+    }
+  }
+}
+
+.precototal{
+  margin-top: 50px;
 }
 
 .divLogoFinal {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 50px 0px 50px 50px;
+  height: 25%;
   background-color: #a2ca02;
-  p{
-    font-size: 128px;
-    color: white;
+  p {
+    font-size: 24px;
+    color: #1331a1;
     font-weight: 400;
   }
-  
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .div1,
+  .div2 {
+    padding-right: 450px;
+  }
 }

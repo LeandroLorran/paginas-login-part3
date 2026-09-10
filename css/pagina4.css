@@ -16,8 +16,6 @@ body {
   width: 100%;
   min-height: 950px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header {
@@ -49,34 +47,51 @@ header {
 
 .conteudo {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  width: 100vh;
 
-  justify-content: space-between;
-  width: 70%;
+  .divlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+      font-size: 34px;
+      font-weight: 400;
+      width: 400px;
+    }
+
+    .rosa {
+      font-size: 48px;
+      color: #f31366;
+    }
+  }
 
   .coteudoTexto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
     gap: 20px;
-    padding: 0px 0px 0px 50px;
+   
     width: 80%;
 
     .informacoes {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
-      width: 100%;
+      gap: 50px;
+     
       img {
-        width: 52px;
-        margin-right: 15px;
+        
+        margin: 0px;
+        margin-right: 10px;
       }
 
       p {
         font-size: 24px;
         font-weight: 400;
-        padding-right: 100px;
+        padding: 0px;
+        width: 300px;
       }
     }
 
@@ -91,8 +106,61 @@ header {
     div {
       display: flex;
     }
+
+    .logo {
+      margin-left: 100px;
+    }
+  }
+}
+
+.Imagemtexto{
+  display: flex;
+  align-items: flex-end;
+}
+.informacao {
+  display: flex;
+  align-items: center;
+}
+
+
+.descricao {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.divLogoFinal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 0px 50px 50px;
+  height: 25%;
+  background-color: #a2ca02;
+  p {
+    font-size: 24px;
+    color: #1331a1;
+    font-weight: 400;
   }
 
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .div1,
+  .div2 {
+    padding-right: 450px;
+  }
+}
+
+.secao2 {
+  height: 100vh;
+  display: flex;
+  margin-left: 480px;
+  padding-bottom: 4000px;
+}
+.Conteudosecao2 {
   .linhadescrição {
     width: 100%;
     border: none;
@@ -150,29 +218,7 @@ header {
   }
 }
 
-.informacao {
-  display: flex;
-  align-items: center;
-}
-.imagemGrande {
-  width: 500px;
-}
-
 .descricao {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.divLogoFinal {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a2ca02;
-  p{
-    font-size: 128px;
-    color: white;
-    font-weight: 400;
-  }
-  
+  flex-direction: column;
 }
