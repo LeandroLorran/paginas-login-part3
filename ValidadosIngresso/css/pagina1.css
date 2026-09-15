@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1331a1;
+  background-color: #e4e4e4;
+
+  h1 {
+    color: rgba(212, 20, 91, 1);
+    font-size: 52px;
+  }
+}
+
+.pagina {
+  width: 100%;
+  min-height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 20px 0px 20px 0px;
+  height: 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 6px solid #a2ca02;
+  margin-bottom: 40px;
+  ol {
+    display: flex;
+    list-style: none;
+    li {
+      padding-left: 25px;
+      font-size: 30px;
+      a {
+        text-decoration-line: none;
+        color: #d4145b;
+      }
+    }
+  }
+
+  img {
+    width: 250px;
+  }
+}
+
+.conteudo {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.divConteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  button {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 6%;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(162, 202, 2, 1);
+  }
+}
+
+.divInput {
+  width: 25%;
+
+  input {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    padding-left: 5px;
+    background-color: #e4e4e4;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #1331a1;
+    border-radius: 8px;
+    color: #1331a1;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+}
+.imagemGrande {
+  width: 500px;
+}
+
+.descricao {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.divLogoFinal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2ca02;
+  p {
+    font-size: 128px;
+    color: white;
+    font-weight: 400;
+  }
+}

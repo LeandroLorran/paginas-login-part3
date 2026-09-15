@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jockey One", sans-serif;
+  background-image: url(../Assets/pag2/Background2.png.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(40px);
+}
+
+.pagina {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validador {
+  position: relative;
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+
+  &:after{
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgba(243, 19, 102, 1),rgba(188, 12, 77, 1));
+    top: 250px;
+    right: 630px;
+    width: 118px;
+    height: 118px;
+    border-radius: 100px;
+  }
+}
+
+.rosa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(243, 19, 102, 1),rgba(188, 12, 77, 1));
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+
+  h2 {
+    color: white;
+    font-size: 52px;
+    font-weight: 400;
+  }
+}
+
+.login {
+  width: 60%;
+  height: 100%;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: rgba(212, 20, 91, 1);
+    font-size: 58px;
+  }
+
+  hr {
+    background-color: aqua;
+    width: 40%;
+    height: 4px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+  }
+
+  button{
+    font-family: "Jockey One", sans-serif;
+    border-radius: 20px;
+    font-size: 24px;
+    background-color: rgba(19, 49, 161, 1);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+  }
+
+  button:hover{
+    background-color: rgb(12, 31, 100);
+  }
+  
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  label {
+    color: rgba(19, 49, 161, 1);
+    font-size: 24px;
+  }
+
+  input {
+    color: rgba(19, 49, 161, 1);
+    font-family: "Jockey One", sans-serif;
+    padding-left: 5px;
+    font-size: 18px;
+    background-color: rgba(242, 242, 242, 1);
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(19, 49, 161, 1);
+    height: 30px;
+  }
+
+  
+}
