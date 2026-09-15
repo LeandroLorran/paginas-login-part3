@@ -47,16 +47,32 @@ header {
   }
 }
 
-.conteudo{
+.conteudo {
+  position: relative; /* necessário para o ::after absoluto se referenciar a ele */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 70%;
 
-  img{
+  img {
+    position: relative;
+
     border-radius: 20px;
     width: 1000px;
     height: 700px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top: 60%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    background-color: #f31366;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
   }
 }
 
@@ -139,18 +155,18 @@ header {
   background-color: #a2ca02;
   p {
     font-size: 24px;
-    color: #1331A1;
+    color: #1331a1;
     font-weight: 400;
   }
 
-  div{
+  div {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
 
   .div1,
-  .div2{
+  .div2 {
     padding-right: 450px;
   }
 }
@@ -172,11 +188,11 @@ header {
     border: 1px solid rgba(19, 49, 161, 1);
   }
 
-  button:hover{
+  button:hover {
     background-color: #d6d6d6;
   }
   #ip {
     border-radius: 0px 8px 8px 0px;
-     font-size: 16px;
+    font-size: 16px;
   }
 }

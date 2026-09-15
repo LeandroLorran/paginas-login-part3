@@ -12,12 +12,39 @@ body {
   background-color: #e4e4e4;
 }
 
+.bola{
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: linear-gradient(rgba(243, 19, 102, 1),rgba(188, 12, 77, 1));
+  filter: blur(62px);
+  border-radius: 9999px;
+}
+
+.bola1{
+  left: -177px;
+  top: 187px;
+}
+
+.bola2{
+  left: 1700px;
+  top: 20px;
+}
+
+.bola3{
+  left: 74px;
+  top: 900px;
+  z-index: -1;
+}
+
 .pagina {
+  position: relative; 
   width: 100%;
-  min-height: 1000px;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 header {
@@ -52,7 +79,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 70%;
-
+  
   img{
     border-radius: 20px;
     width: 1000px;
@@ -157,7 +184,7 @@ header {
 
 .inputImagem {
   display: flex;
-  flex-direction: block;
+ 
   width: 100%;
   text-align: center;
   button {
