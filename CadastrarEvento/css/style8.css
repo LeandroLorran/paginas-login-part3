@@ -48,7 +48,7 @@ header {
 }
 
 .conteudo {
-  position: relative; /* necessário para o ::after absoluto se referenciar a ele */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
