@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.divPagina{
+   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(235, 239, 255, 1);
+}
+
+.pagEsquerdo{
+  width: 70%;
+  height: 100%;
+  padding: 200px 0px 0px 200px;
+}
+
+.divLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 60%;
+
+  button{
+    width: 100%;
+    background-color: rgba(101, 110, 211, 1);
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    color: rgba(175, 179, 255, 1);
+    font-size: 20px;
+  }
+}
+
+.divInput{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+
+  label{
+    font-size: 18px;
+  }
+  input{
+    background-color: rgba(175, 179, 255, 0);
+    border: 2px solid rgba(101, 110, 211, 1);
+    border-radius: 50px;
+    height: 40px;
+  }
+}
+
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+
+  button{
+    width: 15%;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.divIcons{
+  margin-top: 50px;
+  
+}
+
+.divBastao{
+  transform: rotateZ(40deg);
+  border-radius: 100px;
+  position: relative;
+  bottom: 200px;
+  right: 200px;
+  background-color: rgba(175, 179, 255, 1);
+  height: 500px;
+  width: 140px;
+
+  box-shadow: -5px -5px 0px 5px rgba(131, 140, 241, 1);
+}
+
+
+
+
+
+
+.pagDireito{
+  width: 30%;
+  height: 100%;
+  background-color: rgba(175, 179, 255, 1);
+
+  img{
+    width: 800px;
+    position: relative;
+    right: 360px;
+    bottom: 50px;
+  }
+}

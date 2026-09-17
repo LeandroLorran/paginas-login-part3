@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.divPagina {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(249, 237, 50, 1), rgba(217, 189, 50, 1));
+  backdrop-filter: blur(5px);
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  background-color: rgba(230, 243, 255, 0.75);
+  border-radius: 24px;
+  width: 70%;
+  height: 75%;
+}
+
+.divImagens {
+  border-radius: 24px;
+  height: 100%;
+  width: 35%;
+}
+
+.forma{
+  position: absolute;
+ 
+}
+
+.forma1{
+  left: 300px;
+  top: 200px;
+  height: 500px;
+}
+
+.forma2{
+  left: 320px;
+  top: 150px;
+  height: 500px;
+}
+
+.forma3{
+  left: 287px;
+  top: 450px;
+  height: 350px;
+}
+
+.forma4{
+  left: 320px;
+  top: 200px;
+  height: 500px;
+}
+
+.divLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  gap: 20px;
+ z-index: 2px;
+  background-color: rgba(252, 254, 255, 1);
+  width: 75%;
+  height: 100%;
+  border-radius: 24px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.inputs {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  width: 70%;
+
+  label {
+    color: rgba(124, 131, 138, 1);
+    font-weight: 500;
+  }
+  input {
+    padding-left: 30px;
+    width: 100%;
+    height: 42px;
+    border-radius: 14px;
+    background-color: rgba(176, 186, 195, 0.4);
+    border: none;
+  }
+  input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.buttonCreate {
+  background-color: rgba(249, 237, 50, 1);
+  border: none;
+  width: 30%;
+  height: 50px;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.divPossuiConta {
+  display: flex;
+  gap: 15px;
+  width: 70%; 
+  font-size: 18px;
+  button {
+    color: rgba(249, 237, 50, 1);
+    font-family: Poppins;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 18px;
+  }
+
+  button:hover{
+    color: rgb(161, 153, 33);
+  }
+}
+
+.or{
+  color: rgba(176, 186, 195, 1);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.divBotoes{
+  display: flex;
+  gap: 80px;
+  height: 8%;
+  width: 50%;
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid rgba(124, 131, 138, 1);
+    border-radius: 14px;
+    color: rgba(124, 131, 138, 1);
+    height: 100%;
+    width: 100%;
+
+    img{
+      height: 80%;
+      width: 25%;
+    }
+  }
+}
+
+.reservado{
+  color: rgba(124, 131, 138, 1);
+  font-weight: 400;
+  margin-top: auto;
+}

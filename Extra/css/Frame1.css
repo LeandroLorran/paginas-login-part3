@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.divPagina {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    rgba(243, 206, 158, 1),
+    rgba(244, 139, 123, 0.72),
+    rgba(229, 76, 145, 0.78)
+  );
+}
+
+.parteEsquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 100%;
+
+  h2 {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 62px;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
+.parteDireita {
+  display: flex;
+  background: radial-gradient(
+    rgba(229, 76, 145, 0.39),
+    rgba(244, 139, 123, 0.24),
+    rgba(244, 139, 123, 1)
+  );
+  border: 12px solid rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  width: 70%;
+  height: 80%;
+}
+
+.retangulo {
+  border-radius: 10px;
+  background: linear-gradient(
+    rgba(229, 76, 145, 1),
+    rgba(244, 139, 123, 1),
+    rgba(247, 173, 80, 1)
+  );
+  height: 100%;
+  width: 30%;
+
+  box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.25);
+
+  .linhas {
+    position: absolute;
+    bottom: 130px;
+    height: 60%;
+    left: 470px;
+    z-index: 1;
+  }
+
+  .pessoa {
+    position: absolute;
+    z-index: 2;
+    bottom: 260px;
+    height: 50%;
+    left: 470px;
+  }
+}
+
+.login {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.titulo {
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 30px;
+  display: flex;
+  gap: 10px;
+
+  .ad {
+    background: linear-gradient(rgba(247, 173, 80, 1), rgba(235, 67, 53, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.divPagina {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(235, 239, 255, 1);
+}
+
+.divPagEsquerdo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.imagemMonitor {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  z-index: 2;
+}
+
+.bastao {
+  position: absolute;
+  width: 650px;
+  height: 600px;
+  border-radius: 0px 0px 100px 100px;
+ 
+}
+
+.bastao1{
+   left: 300px;
+  z-index: 1;
+  background-color: rgba(175, 179, 255, 1);
+}
+
+.bastao2{
+  left: 270px;
+top: -60px;
+  z-index: 0;
+  background-color: rgba(101, 110, 211, 1);
+  transform: rotateZ(-10deg);
+}
+
+.divPagDireito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  gap: 40px;
+
+  h1 {
+    font-weight: 700;
+  }
+  .registerBT {
+    width: 60%;
+    background-color: rgba(101, 110, 211, 1);
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+
+  .inputs {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      font-weight: 400;
+    }
+    input {
+      width: 100%;
+      background-color: rgba(175, 179, 255, 0);
+      border: 1px solid rgba(101, 110, 211, 1);
+      border-radius: 50px;
+      height: 35px;
+    }
+  }
+}
+
+.haveAccount {
+  display: flex;
+  gap: 10px;
+
+  button {
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.mediaIcons {
+  margin-top: 40px;
+}
