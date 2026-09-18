@@ -85,7 +85,10 @@ body {
   width: 70%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 50px;
+
+  padding-right: 50px;
 }
 
 .titulo {
@@ -100,5 +103,121 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.divButoes {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  width: 70%;
+
+  button {
+    font-family: "Inter";
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: 2px solid rgba(22, 34, 49, 1);
+    border-radius: 8px;
+    padding: 10px 10px;
+    width: 25%;
+
+    div {
+      background-image: url(../assets/f.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 22%;
+      height: 100%;
+      background-color: rgba(24, 119, 242, 1);
+      border-radius: 9999px;
+    }
+  }
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.inputs {
+  background: none;
+  width: 70%;
+  height: 10%;
+  padding-left: 20px;
+  font-family: "Inria";
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(21, 34, 53, 1);
+  border-radius: 8px;
+  border: 3px solid rgba(26, 25, 25, 1);
+
+  box-shadow: 5px 6px 0px 8px black;
+}
+
+.input1 {
+  background-image: url(../assets/Icon-Email-Fram1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 560px;
+}
+
+.input2 {
+  background-image: url(../assets/icon-senha.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 560px;
+}
+
+.inputs::placeholder {
+  font-family: "Inria";
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(21, 34, 53, 1);
+}
+
+.inputs:focus {
+  outline: none;
+}
+
+.divSignUp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  font-size: 16px;
+  button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    gap: 10px;
+    background: linear-gradient(rgba(247, 173, 80, 1), rgba(235, 67, 53, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.divLogin {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  height: 10%;
+  button {
+    width: 40%;
+    height: 100%;
+    background: none;
+    font-family: "Inria";
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(21, 34, 53, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 14px;
+    box-shadow: 5px 6px 0px 8px black;
   }
 }
